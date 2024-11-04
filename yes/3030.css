@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    font-family: cursive;
+    background-color: #ff0000;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
+nav {
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+    background-color: #0d00ff;
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+/* Layout for Main Content and Sidebar */
+.container {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+/* Main Content */
+main {
+    flex: 2;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-left: 4px solid #ec7bd0;
+}
+
+/* Table Styling */
+table {
+    font-family: fantasy;
+    font-weight: lighter;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 1em;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #4A90E2;
+    font-size: 1.2em;
+}
+
+thead {
+    background-color: #000000;
+    color: white;
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Color */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* Stack Navigation Vertically */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust Sidebar Width */
+    aside {
+        border-left: none;
+        border-top: 4px solid #4A90E2;
+    }
+}
