@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first"><br>
+            Last Name: <input type="text" name="last"><br>
+            Password: <input type="password" name="pass"><br>
+            <input type="checkbox" name="remember" checked> remember me <br>
+            class:
+            <input type="radio" name="class" value="freshman">freshman
+            <input type="radio" name="class" value="sophmore">sophmore
+            <input type="radio" name="class" value="junior">junior
+            <input type="radio" name="class" value="senior">senior
+            <input type="submit">
+        </form>
+        
+        <h3>The form tag has an "action" attribute. What does it do?</h3>
+        <p>
+            The action attribute in the form tag specifies the URL where the form data will be sent for processing when the form is submitted. It determines the server endpoint that will handle the form submission.
+        </p>
+        <h3>The form tag has a "method" attribute. What does it do?</h3>
+        <p>
+            The method attribute in the form tag specifies how the form data is sent to the server, usually as either get or post.
+        </p>
+        <h3>What is the difference between a "POST" and a "GET"?</h3>
+        <p>
+            Get sends data as part of the URL, making it visible and suitable for retrieving information, while Post sends data in the request body, keeping it hidden and ideal for sending sensitive or large amounts of data securely.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wes Vance</p>
+    </footer>
+    
+</body>
+</html>
