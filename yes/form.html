@@ -12,6 +12,31 @@
     </header>
     <main>
         <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <label>
+                    <input type="checkbox" name="remember" checked>
+                    Remember Me
+                </label>
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                </select>
+            </div>
             First Name: <input type="text" name="first"><br>
             Last Name: <input type="text" name="last"><br>
             Password: <input type="password" name="pass"><br>
@@ -24,17 +49,13 @@
             <input type="submit">
         </form>
         
-        <h3>The form tag has an "action" attribute. What does it do?</h3>
+        <h3>What are different ways to style your form?</h3>
         <p>
-            The action attribute in the form tag specifies the URL where the form data will be sent for processing when the form is submitted. It determines the server endpoint that will handle the form submission.
+            You can do row, comments, password, checkbox, drop menu
         </p>
-        <h3>The form tag has a "method" attribute. What does it do?</h3>
+        <h3>Why does the professor like to use flex?</h3>
         <p>
-            The method attribute in the form tag specifies how the form data is sent to the server, usually as either get or post.
-        </p>
-        <h3>What is the difference between a "POST" and a "GET"?</h3>
-        <p>
-            Get sends data as part of the URL, making it visible and suitable for retrieving information, while Post sends data in the request body, keeping it hidden and ideal for sending sensitive or large amounts of data securely.
+            It is a lot easier and simplier. It can let you do more.
         </p>
     </main>
     <footer>
